@@ -1,11 +1,13 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
-body{
+
+body {
   background-color: #F5F8FF;
 }
+
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -34,159 +36,257 @@ body{
 
 /* start shared Section */
 
-.container{
+.container {
   max-width: 1140px;
   margin: 0 auto;
 }
 
-.display-flex{
+.navbar {
   display: flex;
+  gap: 30px;
+  align-items: center;
+  padding-top: 20px;
 }
-.color-gray{
- color: #252432;
-}
-.color-gray-light{
+
+.color-dark{
   color: #8987A1;
 }
-.text-center{
-  text-align: center;
+.color-dark-light{
+  color: #252432;
 }
+.text-start{
+  text-align: start !important;
+  
+}
+
 /* end shared Section */
 
 /* start header style */
 
-/* end header style */
-/* start navbar style */
-
-.navbar{
-  border: 2px solid yellow;
+.row-container {
+  margin: 30px 0px 120px 0px;
+  display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-.logo{
-  max-width: 100px;
-  
 
+.logo {
+  width: 135px;
 }
-.logo img{
+
+.logo img {
   width: 100%;
 }
-.nav-item{
-  list-style: none;
-}
-.nav-link{
-  
-  text-decoration: none;
-  margin-right: 30px;
-}
-.nav-items{
-  margin-top: 30px;
-  
-}
-/* end navbar style */
-/* start banner section  */
-    .banner{
-      
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid green;
-    }
-span{
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 65px; 
-  
-  
 
+.nav-items {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  
+}
+
+.nav-link {
+  text-decoration: none;
+
+}
+.nav-cart a{
+  text-decoration: none;
+  
+}
+/* start banner style */
+.banner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* background-color: gray; */
 }
 .banner-title{
-  font-family: "Inter", sans-serif;
+  font-family: "Noto Serif", serif;
+  font-size: 65px;
   font-weight: 700;
-  font-size: 65px; 
-  color: #E95A08;
-
-}
-.banner-content{
-  width: 100%;
-}
-.banner-image img{
-  width: 100%;
-}
-
-/* end banner section  */
-
-
-/* start our plants section */
-.plants-title-one{
-
-  font-weight: 700;
-  font-size: 50px; 
-  color: #E95A08;
-}
-.plants-title-two {
-  
-  font-weight: 700;
-  font-size: 50px; 
   color: #000000;
+}
+.banner-focus{
+  color: #E95A08;
+}
+.banner-description{
+   font-family: "Inter", sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   color: #8987A1;
+}
+
+/* end banner style */
+
+/* start plant style */
+.plants-section{
+  margin-bottom: 46px;
+  padding: 0  15px;
+}
+.plants-title{
+  font-family: "Noto Serif", serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+
+
+
+.plants-focus{
+  color: #E95A08;
+}
+.plants-subtitle{
+  font-family: "Inter", sans-serif;
+  font-size: 400;
+  font-weight: 22px;
+  margin: 0 auto;
+  max-width: 888px;
+  text-align: center;
+
 }
 
 .card-container{
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 15px;
-  margin: 20px 0px;
-}
-.card{
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   text-align: center;
 }
-.card button{
-  width: 100%;
- padding: 10px;
- margin-top: 10px;
- background-color: #E95A08;
- color: #ffffff;
- border: none;
-}
-/* end our plants section */
-
-.plants-section{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-items: start;
-  
-
-}
-
-.plant-image img{
-  width: 100%;
-  position: relative;
+.card-name{
+  font-family: "Inter", sans-serif;
+  font-size: 500;
+  font-weight: 22px;
+  color: #252432;
   
 }
-.plant-content{
-  padding-left: 40px;
+.card-price{
+  font-family: "Inter", sans-serif;
+  font-size: 700;
+  font-weight: 22px;
+  color: #111111;
+  
+}
+.btn{
+  width: 100%;
+  font-size: 600;
+  font-weight: 16px;
+  background-color: #E95A08;
+  padding: 19px 80px;
+  border: none;
+  margin-top: 10px;
+}
+.btn a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* .card-image{
+  width: 270px;
+} */
+.card-image img{
   width: 100%;
 }
-.plants-trusted-image img{
+/* end plant style */
+
+/* start plants lover style */
+
+.plants-lover-section{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+  margin: 210px 0;
+
+.plants-image{
+  position: relative; 
+  max-width: 540px;
+}
+
+.trusted{
   position: absolute;
-  left: 0px;
-  top: 0px;
+  width:280px;
+  top: -110px;
+  right: -110px;
 }
+.plants-content{
+  max-width: 540px;
+  
+}
+.plants-items{
+  padding-left: 30px;
+}
+.plants-item{
+   font-family: "Inter", sans-serif;
+   margin-top: 20px;
+   font-size: 22px;
+   font-weight: 400;
+   color: #8987A1;
+}
+
+/* end plants lover style */
+
+
+/* start footer style */
+.main-footer{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+/* end footer style*/
+
+
 
 /* start mobile responsive design*/
+@media screen and (max-width: 576px) {
 
-
-/* Start banner */
-@media screen and (max-width:576) {
-  .banner{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .banner-image{
-    width: 100%;
-  }
-  .banner-content{
-    width: 100%;
-  }
+  .btn {
+    padding: 24px 20px;
+   
 }
-/* end banner */
+    .nav-menu {
+      display: none;
+    }
+/* banner */
+
+    .banner{
+      flex-direction: column-reverse;
+    }
+    .banner-content{
+      padding: 16px;
+    }
+    .banner-title{
+      font-family: "Noto Serif", serif;
+      font-size: 24px;
+      font-weight: 400;
+      color: #000000;
+
+   }
+  .banner-description{
+      font-family: "Inter", sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      padding-top: 10px;
+      color: #8987A1;
+  }
+
+/* plants */
+
+  .card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px  15px 0;
+}
+
 /*end mobile responsive design*/
+
+
+.plants-lover-section{
+flex-direction: column;
+ margin: 65px 0;
+}
+
+.trusted {
+  display: none;
+
+}
+
